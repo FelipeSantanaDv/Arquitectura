@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Instalar Ubuntu</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+    <script src="assets/cuestionario.js"></script>
+    <script src="http://use.edgefonts.net/poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;nova-slim:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all;varela-round:n4:all.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/bootstrap-carousel.js"></script>
+	<script src="assets/bootstrap-transition.js"></script>
+    
+    
+    
+</head>
+<body>
+  <div id="container2">
+   <nav class="menu">
+      <h3>Ubuntu un SO Diferente</h3>
+       <ul>
+           <li><a href="cuestionario.html">Cuestionario</a></li>
+           <li><a href="terminal.html">La Terminal</a></li>
+           <li><a href="instalar.html">Instalar Ubuntu</a></li>
+           <li><a href="intro.html">Conceptos</a></li>
+           <li><a href="index.html">Inicio</a></li>
+       </ul>
+   </nav>
+   <header id="titulocuest">
+   <h2>INSTALACIÓN</h2>
+      </header>
+     </div>
+      
+      <section class="seccion">
+    <article>
+        <header>
+            <h3 id = "intro" class="subtitulo">Antes de la instalación</h3>
+        </header>
+        <p class="parrafo">Ubuntu es un sistema operativo basado en debian lo que lo hace una opción muy segura entre todas las que exiten ya que tiene un gran respaldo de la comunidad, es bastante estable, cuenta con una gran cantidaad de repositorios, etc. En este caso vamos a instalarlo con la versión de escritorio Gnome.</p>
+        
+        
+    </article>
+    <article>
+        <header>
+            <h2 class="subtitulo">Requisitos mínimos</h2>
+        </header>
+        <p class="parrafo">* Procesador 1 GHz(recomendado dualcore 2.4GHz)<br>
+            
+            <br>* 7GB libres en disco duro (recomendado 40GB)<br>
+            <br>* 1.5GB de RAM (Recomendado 3GB)<br>
+            <br><a href="https://ubuntugnome.org/download/">¡DESCARGA AQUI UBUNTU GNOME!</a>
+        </p>
+        
+        </article>
+    <article>
+        <header>
+            <h2 class="subtitulo">1. Selección</h2>
+        </header>
+        <p class="parrafo">Despues de insertar nuestro disco o usb con Ubuntu Gnome nos encontramos con una interfaz gráfica con la que podemos interactuar con el sistema operativo mientras se instala, En este caso vamos a instalar ubuntu junto a windows para tener dual boot así que vamos a seleccionar la opcion de probar Ubuntu</p>
+        
+        <img src="assets/imagenes/seleccion1.png">
+             </article>
+        
+    <article>
+        <header>
+            <h2 class="subtitulo">2. Particionando el disco</h2>
+        </header>
+        <p class="parrafo">Para particionar nuestro disco vamos a usar Gparted, una aplicación que viene preinstalada en el live, y vamos a crear una nueva partición extendida del tamaño total del disco que vamos a usar.</p>
+        <img src="assets/imagenes/particion2.png">
+    </article>
+        
+           <article>
+        <header>
+            <h2 class="subtitulo">3. Partición SWAP</h2>
+        </header>
+        <p class="parrafo">Creamos una partición de la mitad de la RAM que tengamos, como sistema de archivos le ponemos linux-swap, esta partición lo que hace es ayudar a la RAM a sostener los procesos repetitivos para evitar que se llegue a colgar en algún momento.</p>
+        <img src="assets/imagenes/swap3.png">
+    </article>
+             <article>
+        <header>
+            <h2 class="subtitulo">4. Partición raiz</h2>
+        </header>
+        <p class="parrafo">La siguiente partición es en la que se va a instalar el sistema operativo minimo puede ser de 2GB pero lo recomendable es dejarla de unos 12GB, sistema de ficheros va a ser ext4 y como etiqueta le ponemos "/"</p>
+        <img src="assets/imagenes/raiz4.png">
+    </article>
+          
+          <article>
+        <header>
+            <h2 class="subtitulo">5. Partición home</h2>
+        </header>
+        <p class="parrafo">La partición home es en la que se almacena toda la información que nosotros almacenemos en la pc, el tamaño va a ser de todo lo que quede sobrando. Esta partición la hacemos para guardar nuestra información, así cuando querramos instalar otra distribucion de linux la instalamos sobre "/" y de esta forma nuestra informacion queda intacta en /home.</p>
+        <img src="assets/imagenes/home5.png">
+    </article>
+        
+           <article>
+        <header>
+            <h2 class="subtitulo">6. Preparando instalación</h2>
+        </header>
+        <p class="parrafo">Despues de tener listas nuestras particiones vamos a picarle a la palomita para que guarden los cambios, cerramos el Gparted, picamos en el icono que dice intalar ubuntu gnome, seleccionamos nuestro idioma, continuar, si tenemos una buena conexión a internet y no necesitamos apurarnos le damos en instalar actualizaciones y continuar.</p>
+        <img src="assets/imagenes/prepa6.png">
+    </article>
+           <article>
+        <header>
+            <h2 class="subtitulo">7. Tipo de instalación</h2>
+        </header>
+        <p class="parrafo">Podemos darle en instalar junto a windows pero vamos a hacerlo manualmente, entonces le damos click a más opciones y a continuar.</p>
+        <img src="assets/imagenes/tipo7.png">
+    </article>
+           <article>
+        <header>
+            <h2 class="subtitulo">8. Seleccionando las particiones</h2>
+        </header>
+        <p class="parrafo">Aquí simplemete seleccionamos las particiones que creamos anteriormente en Gparted y le damos a intalar y continuar.</p>
+        <img src="assets/imagenes/seleccion8.png">
+    </article>
+          <article>
+        <header>
+            <h2 class="subtitulo">9. Creando el usuario</h2>
+        </header>
+        <p class="parrafo">Aqui solo le damos nombre a la maquina, nombre al usuario, agregamos una contraseña y le damos en continuar.</p>
+        <img src="assets/imagenes/creando9.png">
+    </article>
+           <article>
+        <header>
+            <h2 class="subtitulo">10. Finalizando</h2>
+        </header>
+        <p class="parrafo">Llegados a este punto lo unico que debemos hacer es esperar a que se termine de instalar nuestro Ubuntu Gnome.</p>
+        <img src="assets/imagenes/final10.png">
+    </article>
+</section>
+
+<footer id="pie">Desarrollado para Arquitectura de Computadores - Universidad de Cundinamarca 2016</footer> 
+</body>
+    
+</html>

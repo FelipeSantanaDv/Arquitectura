@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>La terminal</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+    <script src="assets/cuestionario.js"></script>
+    <script src="http://use.edgefonts.net/poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;nova-slim:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all;varela-round:n4:all.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/bootstrap-carousel.js"></script>
+	<script src="assets/bootstrap-transition.js"></script>
+    
+    
+    
+</head>
+<body>
+  <div id="container2">
+   <nav class="menu">
+      <h3>Ubuntu un SO Diferente</h3>
+       <ul>
+           <li><a href="cuestionario.html">Cuestionario</a></li>
+           <li><a href="terminal.html">La Terminal</a></li>
+           <li><a href="instalar.html">Instalar Ubuntu</a></li>
+           <li><a href="intro.html">Conceptos</a></li>
+           <li><a href="index.html">Inicio</a></li>
+       </ul>
+   </nav>
+   <header id="titulocuest">
+   <h2>LA TERMINAL</h2>
+      </header>
+     </div>
+      
+      <section class="seccion">
+    <article>
+        <header>
+            <h3 id = "intro" class="subtitulo">¿Que es la terminal?</h3>
+        </header>
+        <p class="parrafo">La terminal, consola, línea de comandos o shell de GNU/Linux es la herramienta más poderosa que encontraremos en Linux. La terminal sólo consiste de una ventana donde podrás introducir comandos que pueden hacer de todo, desde mostrar información del sistema hasta ser complejos programas de recuperación de datos o cualquier otro programa sin interfaz gráfica.</p>
+        
+        <img src="assets/imagenes/terminal.png">
+        
+    </article>
+    <article>
+        <header>
+            <h2 class="subtitulo">Comandos basicos</h2>
+        </header>
+        <p class="parrafo">
+            Aunque el manejo de la terminal no es imprescindible para poder usar Linux, ni mucho menos. Resulta muy práctico conocer algunos comandos básicos que podemos ejecutar en todo momento, para realizar ciertas operaciones de manera rápida y eficiente. La terminal es muy poderosa, y cómo todo ente con superpoderes, genera miedo si forma parte de lo desconocido.
+        </p>
+        
+        </article>
+    <article>
+        <header>
+            <h2 class="subtitulo">1. Cat</h2>
+        </header>
+        <p class="parrafo">El comando <strong>cat</strong>, mostrará como salida el contenido del archivo que le pasemos como argumento. Cuando definamos el archivo a mostrar, deberemos tener en cuenta el escribir la ruta completa de este archivo. Aquí algunos ejemplos:<br>
+            
+            <br><strong>-cat /etc/issue</strong> mostrará el contenido del fichero issue, que normalmente almacena el nombre de la distribución.<br>
+            <br><strong>-cat /proc/version</strong> que en este caso nos da como salida el contenido del fichero version dentro de la carpeta /proc que como norma general contiene la versión del Kernel de la distribución que estamos usando.<br>
+            <br><strong>-cat --h</strong> nos mostrará todas las opciones que podemos usar para trabajar con este comando.</p>
+        
+             </article>
+          
+          <article>
+        <header>
+            <h2 class="subtitulo">2. Cd</h2>
+        </header>
+        <p class="parrafo">Con este comando podremos movernos por las diferentes carpetas. Vamos con los ejemplos:<br>
+            
+            <br><strong>-cd /xxxx</strong> donde xxxx es el nombre del fichero al que queremos desplazarnos, siempre escribiendo la ruta completa, es decir, si la carpeta está en el escritorio del usuario1, por ejemplo, tendremos que poner cd /home/usuario1/Escritorio/xxxx.<br>
+            <br><strong>-cd ..</strong> Desde el directorio donde nos encontramos, retrocederemos un nivel en el árbol de directorio. Usando el ejemplo anterior, si nos encontramos en cd /home/usuario1/Escritorio/xxxx y usamos el comando cd .. Volveremos a /home/usuario1/Escritorio.<br>
+            <br><strong>-cd ../..</strong> Con este otro no retrocederemos sólo un nivel si no dos, por lo que en el caso que hemos usado anteriormente, nos situaríamos en /home/usuario1.</p>
+        
+             </article>
+          
+            <article>
+        <header>
+            <h2 class="subtitulo">3. Ls</h2>
+        </header>
+        <p class="parrafo">El comando <strong>ls</strong> listará los ficheros y carpetas contenidas en el directorio donde nos situamos. Aquí unos ejemplos:<br>
+            
+            <br><strong>-ls –l</strong> Mostrará los archivos y carpetas con un formato de lista. Incluye información de permisos, tamaño (en el caso de los ficheros), etc…<br>
+            <br><strong>-ls –a</strong> Mostrará todos los archivos y carpetas, incluidos los ocultos.<br>
+            <br><strong>-ls –h</strong> Nos “traducirá” el tamaño de los archivos a un método de lectura mucho más fácil de entender (normalmente los muestra en bytes), por ejemplo, en lugar de mostrar 1024bytes mostrará 1K.</p>
+        
+             </article>
+          
+            <article>
+        <header>
+            <h2 class="subtitulo">4. rm</h2>
+        </header>
+        <p class="parrafo">Con este comando podremos eliminar ficheros simplemente pasándole como argumento el nombre del fichero deseado. Los ejemplos:<br>
+            
+            <br><strong>-rm –v</strong> hará que se nos muestre el nombre del fichero antes de borrarlo<br>
+            <br><strong>-rm –r </strong>borrará los subdirectorios de manera recursiva, por lo que deberemos tener mucho cuidado de ver sobre qué ubicación lo aplicamos.<br>
+            <br><strong>-rm –f</strong> fuerza el borrado de los archivos y directorios, omitiendo cualquier aviso que el sistema pueda ofrecer, así como la confirmación del usuario para ejecutar la eliminación.<br>
+                <br><strong>-rm –rf</strong> el comando definitivo para la eliminación, mucho cuidado con este, porque ejecutado en la raíz del sistema / causaría la eliminación inmediata de todas las carpetas contenidas en /</p>
+        
+             </article>
+            <article>
+        <header>
+            <h2 class="subtitulo">5. cp</h2>
+        </header>
+        <p class="parrafo">Comando con el que copiaremos archivos o directorios de una ubicación a otra. También es usado normalmente para renombrar ficheros o carpetas. Algunos ejemplos:<br>
+            
+            <br><strong>-cp archivo1 carpetadestino/</strong> creará una copia del documento llamado archivo1 en la ubicación carpetadestino/<br>
+            <br><strong>-cp archivo1 fichero2 </strong>creará una copia de archivo1 pero con el nombre fichero2. En el comando, si tras fichero2 especificamos una ruta, creará esa copia en la ubicación que le pasemos.<br>
+            <br><strong>-cp –u fichero1 /carpetadestino</strong> copiará el archivo fichero1 SÓLO si es más reciente que el archivo del mismo nombre de la ubicación que le acabamos de pasar. Muy útil para copias de seguridad.<br></p>
+        
+             </article>
+          
+              <article>
+        <header>
+            <h2 class="subtitulo">6. pwd</h2>
+        </header>
+                  <p class="parrafo">Un comando muy simple, pero muy útil porque nos <strong>mostrará</strong> en caso de que con tanto baile de directorios y ficheros nos hayamos desubicado, <strong>la ubicación actual donde nos encontramos</strong>.</p>
+        
+             </article>
+          
+             <article>
+        <header>
+            <h2 class="subtitulo">7. mkdir</h2>
+        </header>
+        <p class="parrafo">Comando que creará directorios, bien dentro de la carpeta donde nos encontremos, bien en una ruta que le especifiquemos. Vamos con los ejemplos:<br>
+            
+            <br><strong>-mkdir carpeta1</strong> creará un directorio llamado carpeta1 dentro de la ubicación donde nos hallemos.<br>
+            <br><strong>-mkdir carpeta1 /etc/</strong>creará el mismo directorio pero dentro de la carpeta /etc/<br>
+            <br><strong>-mkdir –p /etc/carpeta1/carpeta2</strong>creará la estructura de carpetas padre y carpetas hijo que les especifiquemos y en la ruta que especifiquemos, como en el ejemplo, donde en /etc/ se creará la carpeta llamada carpeta1 y dentro de esta otra llamada carpeta2.<br></p>
+        
+             </article>
+          
+            <article>
+        <header>
+            <h2 class="subtitulo">8. rmdir</h2>
+        </header>
+        <p class="parrafo">Antítesis del anterior, puesto que con este comando eliminaremos directorios. Algunos ejemplos:<br>
+            
+            <br><strong>-rmdir /carpeta1</strong>eliminará el directorio llamado carpeta1.<br>
+            <br><strong>-rmdir –p /carpeta1</strong> elimina la carpeta indicada e intenta eliminar también la carpeta padre en caso de quedarse éstos vacíos. Si el directorio que contiene carpeta1 fuese /carpeta0 y /carpeta0 se quedase vacío al no estar /carpeta1, /carpeta0 también se eliminaría.<br>
+            <br><strong>-rmdir –ignore-fail-on-non-empty /carpeta1</strong>eliminará el directorio llamado carpeta1 aunque éste contenga archivos en su interior.<br></p>
+        
+             </article>
+        
+          <article>
+        <header>
+            <h2 class="subtitulo">9. rmdir</h2>
+        </header>
+        <p class="parrafo">Este complejo comando, se usa normalmente para indicar qué apagado queremos realizar. Por ejemplo:<br>
+            
+            <br><strong>-init 0</strong>equivale al comando poweroff y apagará el equipo.<br>
+            <br><strong>-init 6</strong> equivaldría al comando reboot y reiniciará el sistema.</p>
+        
+             </article>
+          
+           <article>
+        <header>
+            <h2 class="subtitulo">10. man</h2>
+        </header>
+        <p class="parrafo">Este comando es uno de los que más usaras aquellos que recien inician en el mundo Linux, puesto que seguido del comando del que queramos información, mostrará en pantalla el manual de uso de dicho comando. Aunque no sólo puede mostrarlo en pantalla, también podremos exportarlo a un fichero .pdf. Aquí algunos ejemplos de uso:<br>
+            
+            <br><strong>-man comando1</strong>mostrará la página del manual que contiene la información del comando que le pasemos como argumento.<br>
+            <br><strong>-man –w comando1</strong> mostrará la ruta donde encontraremos el archivo que contiene la información del comando que le pasemos, por si en lugar de querer usar este comando preferimos hacer uso de cat<br>
+            <br><strong>-man man</strong>mostrará la página del manual referentes al comando man, lo que vendría siendo el manual del manual donde podremos ver todas las formas posibles en las que poder consultar la información de los comando que queramos conocer mejor.<br></p>
+        
+             </article>
+        
+        
+</section>
+
+<footer id="pie">Desarrollado para Arquitectura de Computadores - Universidad de Cundinamarca 2016</footer> 
+</body>
+    
+</html>

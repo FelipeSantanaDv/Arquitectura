@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+    <script src="assets/cuestionario.js"></script>
+    <script src="http://use.edgefonts.net/poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;nova-slim:n4:all;poiret-one:n4:all.js"></script>
+    <script src="http://use.edgefonts.net/nixie-one:n4:all;poiret-one:n4:all;varela-round:n4:all.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-responsive.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="assets/bootstrap-carousel.js"></script>
+	<script src="assets/bootstrap-transition.js"></script>
+    
+    
+    
+</head>
+<body>
+  <div id="container2">
+   <nav class="menu">
+      <h3>Ubuntu un SO Diferente</h3>
+       <ul>
+           <li><a href="cuestionario.html">Cuestionario</a></li>
+           <li><a href="terminal.html">La Terminal</a></li>
+           <li><a href="instalar.html">Instalar Ubuntu</a></li>
+           <li><a href="intro.html">Conceptos</a></li>
+           <li><a href="index.html">Inicio</a></li>
+       </ul>
+   </nav>
+   <header id="titulocuest">
+   <h2>CUESTIONARIO</h2>
+      </header>
+     </div>
+      
+      <section class="seccion">
+      <article>
+      <ol>
+          <li><p class="parrafo2">1. ¿Que es GNU/Linux?</p>
+              <ul class="listaintro2">
+                  <li><input type="radio" name="R1" value="a" onclick="Engine(1, this.value)">a)	Un programa para editar sistemas operativos.</li>
+                 <li><input type="radio" name="R1" value="b" onclick="Engine(1, this.value)">b)	Un lenguaje de programacion. </li>
+                 <li><input type="radio" name="R1" value="c" onclick="Engine(1, this.value)">c)	Un sistema operativo. </li>
+                 <li><input type="radio" name="R1" value="d" onclick="Engine(1, this.value)">d)	Ninguna de las anteriores. </li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">2.	Tux es la mascota de Linux, ¿Que animal es?</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R2" value="a" onclick="Engine(2, this.value)">a) Un Oso.</li>
+                 <li><input type="radio" name="R2" value="b" onclick="Engine(2, this.value)">b)	Un Perro.</li>
+                 <li><input type="radio" name="R2" value="c" onclick="Engine(2, this.value)">c)	Una Garza. </li>
+                 <li><input type="radio" name="R2" value="d" onclick="Engine(2, this.value)">d)	Un pinguino.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">3.	La funcion principal del Kernel es:</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R3" value="a" onclick="Engine(3, this.value)">a)	Manejar los recursos hardware como la CPU, la memoria y los discos duros.</li>
+                 <li><input type="radio" name="R3" value="b" onclick="Engine(3, this.value)">b)	Manejar solo los recursos fisicos de la computadora.</li>
+                 <li><input type="radio" name="R3" value="c" onclick="Engine(3, this.value)">c)	Manejar solo los recursos digitales de la computadora.</li>
+                 <li><input type="radio" name="R3" value="d" onclick="Engine(3, this.value)">d)	Ninguna de las anteriores.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">4.	Ubuntu es una distribucion de linux basada en:</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R4" value="a" onclick="Engine(4, this.value)">a)	Fedora.</li>
+                 <li><input type="radio" name="R4" value="b" onclick="Engine(4, this.value)">b)	Debian.</li>
+                 <li><input type="radio" name="R4" value="c" onclick="Engine(4, this.value)">c)	OpenSuse.</li>
+                 <li><input type="radio" name="R4" value="d" onclick="Engine(4, this.value)">d)	Arch.</li>  
+              </ul>
+          </li>
+          <li><p class="parrafo2">5.	La terminal es una herramienta que nos permite:</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R5" value="a" onclick="Engine(5, this.value)">a)	Manejar los programas con interfaz grafica.</li>
+                 <li><input type="radio" name="R5" value="b" onclick="Engine(5, this.value)">b)	Arreglar los componentes fisicos de la computadora.</li>
+                 <li><input type="radio" name="R5" value="c" onclick="Engine(5, this.value)">c)	Tener el control total del sistema operativo.</li>
+                 <li><input type="radio" name="R5" value="d" onclick="Engine(5, this.value)">d)	Ninguna de las anteriores.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">6.	El comando "Cd" nos sirve para:
+</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R6" value="a" onclick="Engine(6, this.value)">a)	Eliminar archivos en carpetas.</li>
+                 <li><input type="radio" name="R6" value="b" onclick="Engine(6, this.value)">b)	Renombrar ficheros.</li>
+                 <li><input type="radio" name="R6" value="c" onclick="Engine(6, this.value)">c)	Reparar archivos.</li>
+                 <li><input type="radio" name="R6" value="d" onclick="Engine(6, this.value)">d)	Movernos entre carpetas.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">7.	El comando "ls" nos sirve para:
+             </p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R7" value="a" onclick="Engine(7, this.value)">a)	Listar los ficheros y carpetas contenidas en un directorio.</li>
+                 <li><input type="radio" name="R7" value="b" onclick="Engine(7, this.value)">b)	Renombrar directorios.</li>
+                 <li><input type="radio" name="R7" value="c" onclick="Engine(7, this.value)">c)	Movernos entre carpetas.</li>
+                 <li><input type="radio" name="R7" value="d" onclick="Engine(7, this.value)">d)	Todas las anteriores.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">8.	El comando "rm" nos sirve para:
+             </p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R8" value="a" onclick="Engine(8, this.value)">a)	Renombrar archivos en carpetas contenidas en ficheros.</li>
+                 <li><input type="radio" name="R8" value="b" onclick="Engine(8, this.value)">b)	Mover archivos entre carpetas.</li>
+                 <li><input type="radio" name="R8" value="c" onclick="Engine(8, this.value)">c)	Eliminar ficheros.</li>
+                 <li><input type="radio" name="R8" value="d" onclick="Engine(8, this.value)">d)	Ninguna de las anteriores.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">9.    El comando "cp" nos sirve para:</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R9" value="a" onclick="Engine(9, this.value)">a)  Eliminar ficheros.</li>
+                 <li><input type="radio" name="R9" value="b" onclick="Engine(9, this.value)">b)  Separar archivos entre carpetas.</li>
+                 <li><input type="radio" name="R9" value="c" onclick="Engine(9, this.value)">c)  Copiar archivos o directorios de una ubicacion a otra.</li>
+                 <li><input type="radio" name="R9" value="d" onclick="Engine(9, this.value)">d)	 Ninguna de las anteriores.</li> 
+              </ul>
+          </li>
+          <li><p class="parrafo2">10. El comando "mkdir" nos servira para:</p>
+              <ul class="listaintro2">
+                 <li><input type="radio" name="R10" value="a" onclick="Engine(10, this.value)">a)	Copiar archivos o ficheros de una ubicacion a otra.</li>
+                 <li><input type="radio" name="R10" value="b" onclick="Engine(10, this.value)">b)	Actualizar nuestro sistema operativo.</li>
+                 <li><input type="radio" name="R10" value="c" onclick="Engine(10, this.value)">c)	Realizar una prueba de penetracion a una base de datos.</li>
+                 <li><input type="radio" name="R10" value="d" onclick="Engine(10, this.value)">d)	Crear directorios.</li> 
+              </ul>
+          </li>
+          
+          
+      </ol>
+      
+      <input type="button" id="bresultado" name="RESULTADO" value="RESULTADOS" onclick="Score()";>
+      
+          </article>
+   
+    </section>
+
+<footer id="pie">Desarrollado para Arquitectura de Computadores - Universidad de Cundinamarca 2016</footer> 
+</body>
+    
+</html>
